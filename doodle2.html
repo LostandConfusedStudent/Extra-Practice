@@ -72,16 +72,39 @@
     <h1>Login</h1>
     <form>
         <!-- Data is added as a query string in the url input bar. -->
-        <label for="username">Username:</label>
+        <label for="username">Username: </label>
         <input id="username" name="username" type="text" placeholder="username" required>
 
-        <label for="password">Password:</label>
+        <label for="password">Password: </label>
         <input id="password" name="password" type="password" placeholder="password" required>
 
-        <label for="email">Email:</label>
+        <label for="email">Email: </label>
         <input id="email" name="email" type="email" placeholder="email" required>
 
         <input type="submit">
+    </form>
+
+    <form>
+        <!-- One choice -->
+        <p>Do you prefer cats or dogs?</p>
+        <label for="cats">Cats: </label>
+        <input id="cats" name="petChoice" type="radio" value="CATS">
+
+        <label for="dogs">Dogs: </label>
+        <input id="dogs" name="petChoice" type="radio" value="DOGS">
+
+        <p>What's your current mood?</p>
+
+        <select name="mood">
+            <option value="happy">:)</option>
+            <option value="neutral">:|</option>
+            <option value="sad">:(</option>
+        </select>
+
+        <button>Go!</button>
+
+        <!-- Multiple choices -->
+        <input type="checkbox">
     </form>
 
 </body>
