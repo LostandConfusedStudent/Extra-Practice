@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- This is the title of the page. It is displayed in the tab of the browser. -->
-    <title>Doodling One</title>
+    <title>Page One</title>
 </head>
 <!-- This is the <body> element. It contains all content that displays on the page. -->
 <body>
@@ -23,11 +23,14 @@
         <li>Add an image</li>
     </ul>
 
-    <!-- This is the main title for the document. -->
+    <!-- This is the main title for the document. These are headings. These are block level elements that start on a new line. -->
     <h1>Practice Website! Let's goof off!! Here are some tasks.</h1>
+    <h2>This is just another heading.</h2>
+    <h6>Least important heading.</h6>
 
     <!-- Paragraph about anything. Wrap an important word inside <strong> tags and add a link. -->
-    <p>I'm just a mere <strong>student</strong> who likes to relax and play. This should be fun. This is a link to another page: <a href="file:///C:/Users/pfsun/Desktop/Extra-Practice/doodle2.html" title="doodle2" target="_blank">doodle2</a>.</p>
+    <p>I'm just a mere <strong>student</strong> who likes to relax and play. This should be fun. This is a link to another page: <a href="page2.html" title="page2" target="_blank">Page 2</a>.</p>
+    <p>Here is <a href="page3.html" title="page3" target="_blank">Page 3</a></p>
 
     <!-- Add an image. This is a dragon. -->
     <img src="https://learnfunfacts.files.wordpress.com/2019/10/red-dragon.jpg?w=559&h=322" alt="Dragon">
@@ -42,6 +45,7 @@
         <li>Disable</li>
         <li>Input text</li>
         <li>Special characters</li>
+        <li>Nested lists</li>
     </ul>
     
     <!-- Inline element example. Note that there are no spaces and each element is display side by side in the output. -->
@@ -71,6 +75,35 @@
     <p>This is a &lt;p&gt; element.</p>
     <p>This month is going to be rough. My so-called &quot;income&quot; is now $0 and someone will soon visit my &apos;pigsty&apos; of a house.</p>
     <p>I am sad &amp; disasppointed.</p> 
+
+    <!-- Nest a list inside a list -->
+    <!-- <ol> is for ordered lists and <ul> is for unordered lists. <li> is the list item. -->
+    <h2>Here are some colors</h2>
+
+    <ol>
+        <li>red
+            <ul>
+                <li>fuji apples</li>
+                <li>bell peppers</li>
+            </ul>
+        </li>
+        <li>blue</li>
+        <li>yellow
+            <ul>
+                <li>bananas</li>
+                <li>corn</li>
+                <li>squash</li>
+            </ul>
+        </li>
+        <li>green
+            <ul>
+                <li>peas</li>
+                <li>watermelon</li>
+                <li>kiwi</li>
+                <li>cucumber</li>
+            </ul>
+        </li>
+    </ol>
 
 </body>
 </html>
