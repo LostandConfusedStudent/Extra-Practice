@@ -7,6 +7,7 @@ body {
     background: url(https://www.babybedding.com/images/fabric/gray-woodgrain-fabric_large.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 10px;
 }
 
 div {
@@ -14,9 +15,15 @@ div {
 }
 
 h1 {
-    color: #FF0000;
+    color: #790000;
     /* width, style, color */
     border: 2px solid purple;
+    font-family: georgia;
+    font-size: 5.0em;
+}
+
+span {
+    font-size: 2.0em;
 }
 
 h4 {
@@ -38,6 +45,9 @@ li {
 
 p {
     color: #0066C0;
+    font-family: arial;
+    font-size: 2.0em;
+    font-family: 'Sansita Swashed', cursive;
 }
 
 .checklist {
