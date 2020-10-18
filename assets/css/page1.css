@@ -1,0 +1,16 @@
+body {
+    background: #eee;
+}
+
+h1, h2, h4, h6 {
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.image {
+    text-align: center;
+}

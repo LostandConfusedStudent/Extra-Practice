@@ -3,6 +3,7 @@
 <!-- This is the <html> element. It's the root element that wraps all the content on the page. Language is english. -->
 <html lang="en">
 <!-- This is the <head> element. It's the container for everything included in the html page that isn't the content the page will show to viewers. -->
+
 <head>
     <!-- This element specifies the charachter set for your document to UTF-8. THis includes most characters in most human written languages. -->
     <meta charset="UTF-8">
@@ -13,100 +14,117 @@
     <title>Page One</title>
 </head>
 <!-- This is the <body> element. It contains all content that displays on the page. -->
+
 <body>
+    <!-- Let's make a container to hold everything -->
+    <div class="container">
 
-    <!-- Just a few objectives. -->
-    <h2>Your tasks.</h2>
-    <ul>
-        <li>Add a main title.</li>
-        <li>Write and display a paragraph</li>
-        <li>Bolden an important word</li>
-        <li>Add a link in your paragraph</li>
-        <li>Add an image</li>
-    </ul>
+        <!-- Just a few objectives. -->
+        <h2>Your tasks:</h2>
+        <ul>
+            <li>Add a main title.</li>
+            <li>Write and display a paragraph</li>
+            <li>Bolden an important word</li>
+            <li>Add a link in your paragraph</li>
+            <li>Add an image</li>
+        </ul>
 
-    <!-- This is the main title for the document. These are headings. These are block level elements that start on a new line. -->
-    <h1>Practice Website! Let's goof off!! Here are some tasks.</h1>
-    <h2>This is just another heading.</h2>
-    <h6>Least important heading.</h6>
+        <!-- This is the main title for the document. These are headings. These are block level elements that start on a new line. -->
+        <h1>Practice Website! Let's goof off!! Here are some tasks.</h1>
+        <h2>This is just another heading.</h2>
+        <h6>Least important heading.</h6>
 
-    <!-- Paragraph about anything. Wrap an important word inside <strong> tags and add a link. -->
-    <p>I'm just a mere <strong>student</strong> who likes to relax and play. This should be fun. This is a link to another page: <a href="page2.html" title="page2" target="_blank">Page 2</a>.</p>
-    <p>Here is <a href="page3.html" title="page3" target="_blank">Page 3</a></p>
+        <!-- Paragraph about anything. Wrap an important word inside <strong> tags and add a link. -->
+        <p>I'm just a mere <strong>student</strong> who likes to relax and play. This should be fun. This is a link to
+            another page: <a href="page2.html" title="page2" target="_blank">Page 2</a>.</p>
+        <p>Here is <a href="page3.html" title="page3" target="_blank">Page 3</a></p>
 
-    <!-- Add an image. This is a dragon. -->
-    <h4>I want a picture of a dragon!!</h4>
-    <img src="assets/images/DragonRed.jpg" alt="Dragon">
+        <!-- Add an image. This is a dragon. -->
+        <h4>I want a picture of a dragon!!</h4>
+        <div class="image">
+            <img src="assets/images/DragonRed.jpg" alt="Dragon">
+        </div>
 
-    <!-- Activities to help with the tasks. -->
-    <h2>Practice examples to get an idea of how to do above tasks.</h2>
-    <ul>
-        <li>Inline</li>
-        <li>Block</li>
-        <li>Empty</li>
-        <li>Hyperlink</li>
-        <li>Disable</li>
-        <li>Input text</li>
-        <li>Special characters</li>
-        <li>Nested lists</li>
-    </ul>
-    
-    <!-- Inline element example. Note that there are no spaces and each element is display side by side in the output. -->
-    <em>first</em><em>second</em><em>third</em>
+        <!-- Activities to help with the tasks. -->
+        <h2>Practice examples to get an idea of how to do above tasks.</h2>
+        <ul>
+            <li>Inline</li>
+            <li>Block</li>
+            <li>Empty</li>
+            <li>Hyperlink</li>
+            <li>Disable</li>
+            <li>Input text</li>
+            <li>Special characters</li>
+            <li>Nested lists</li>
+        </ul>
 
-    <!-- Block element example. Note that each element starts in a new line in the output. There are breaks because of the browser defaults. -->
-    <p>fourth</p><p>fifth</p><p>sixth</p>
+        <!-- Inline element example. Note that there are no spaces and each element is display side by side in the output. -->
+        <h4>Inline elements: They display side by side or within each other.</h4>
+        <em>first</em><em>second</em><em>third</em>
 
-    <!-- Empty element example. Displays an image. -->
-    <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+        <!-- Block element example. Note that each element starts in a new line in the output. There are breaks because of the browser defaults. -->
+        <h4>Block-level elements. These are paragraph elements. They display on top of each other because they take up an entire line on the page.</h4>
+        <p>fourth</p>
+        <p>fifth</p>
+        <p>sixth</p>
 
-    <!-- Paragraph with hyperlink to google. Opens in new tab. -->
-    <p>I like to use this search engine: <a href="https://www.google.com" title="google.com" target="_blank">google.com</a>.</p>
+        <div class="image">
+            <!-- Empty element example. Displays an image. -->
+            <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+        </div>
 
-    <!-- Boolean attribute example. The disabled attribute prevents the user from entering text into the input box. -->
-    <input type="text" disabled="disabled">
+        <!-- Paragraph with hyperlink to google. Opens in new tab. -->
+        <p>I like to use this search engine: <a href="https://www.google.com" title="google.com"
+                target="_blank">google.com</a>.</p>
 
-    <!-- Text input is allowed here. You can type anything you want. It just doesn't do anything. -->
-    <input type="text">
+        <!-- Boolean attribute example. The disabled attribute prevents the user from entering text into the input box. -->
+        <input type="text" disabled="disabled">
 
-    <!-- Include special characters in paragraph text. -->
-    <!-- < is &lt; -->
-    <!-- > is &gt; -->
-    <!-- " is &quot; -->
-    <!-- ' is &apos; -->
-    <!-- & is &amp; -->
-    <p>This is a &lt;p&gt; element.</p>
-    <p>This month is going to be rough. My so-called &quot;income&quot; is now $0 and someone will soon visit my &apos;pigsty&apos; of a house.</p>
-    <p>I am sad &amp; disasppointed.</p> 
+        <!-- Text input is allowed here. You can type anything you want. It just doesn't do anything. -->
+        <input type="text">
 
-    <!-- Nest a list inside a list -->
-    <!-- <ol> is for ordered lists and <ul> is for unordered lists. <li> is the list item. -->
-    <h2>Here are some colors</h2>
+        <!-- Include special characters in paragraph text. -->
+        <!-- < is &lt; -->
+        <!-- > is &gt; -->
+        <!-- " is &quot; -->
+        <!-- ' is &apos; -->
+        <!-- & is &amp; -->
+        <p>This is a &lt;p&gt; element.</p>
+        <p>This month is going to be rough. My so-called &quot;income&quot; is now $0 and someone will soon visit my
+            &apos;pigsty&apos; of a house.</p>
+        <p>I am sad &amp; disasppointed.</p>
 
-    <ol>
-        <li>red
-            <ul>
-                <li>fuji apples</li>
-                <li>bell peppers</li>
-            </ul>
-        </li>
-        <li>blue</li>
-        <li>yellow
-            <ul>
-                <li>bananas</li>
-                <li>corn</li>
-                <li>squash</li>
-            </ul>
-        </li>
-        <li>green
-            <ul>
-                <li>peas</li>
-                <li>watermelon</li>
-                <li>kiwi</li>
-                <li>cucumber</li>
-            </ul>
-        </li>
-    </ol>
+        <!-- Nest a list inside a list -->
+        <!-- <ol> is for ordered lists and <ul> is for unordered lists. <li> is the list item. -->
+        <h2>Here are some colors and fruits</h2>
+
+        <ol>
+            <li>red
+                <ul>
+                    <li>fuji apples</li>
+                    <li>bell peppers</li>
+                </ul>
+            </li>
+            <li>blue</li>
+            <li>yellow
+                <ul>
+                    <li>bananas</li>
+                    <li>corn</li>
+                    <li>squash</li>
+                </ul>
+            </li>
+            <li>green
+                <ul>
+                    <li>peas</li>
+                    <li>watermelon</li>
+                    <li>kiwi</li>
+                    <li>cucumber</li>
+                </ul>
+            </li>
+        </ol>
+
+    </div>
 
 </body>
+
 </html>
