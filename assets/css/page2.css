@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.dogs {
+    margin: 0 auto;
+}
+
+.name {
+    border-right: 1px solid #333;
+}
+
+th {
+    border-bottom: 1px solid #333;
+}
