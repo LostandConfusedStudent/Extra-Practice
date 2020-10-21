@@ -23,3 +23,25 @@ for (var i = 0; i < pets.length; i++) {
 console.log("-----------------------");
 
 // Let's do some prompts and confirms
+var pet = confirm("Do you like pets?");
+if (pet) {
+    alert("Awesome!!");
+
+    var answer = prompt("Which would you prefer as a pet? Dog, cat, fish, or bird?");
+// Change answer input to all lowercase letters
+answer = answer.toLowerCase();
+console.log("You picked: " + answer);
+
+if (answer === pets[0] ||
+    answer === pets[1] ||
+    answer === pets[2] ||
+    answer === pets[3] ||
+    answer === pets[0] + "s" ||
+    answer === pets[1] + "s" ||
+    answer === pets[3] + "s") {
+        alert("We like those, too!!");
+    }
+
+} else {
+    alert("Awww...that's too bad...");
+}
